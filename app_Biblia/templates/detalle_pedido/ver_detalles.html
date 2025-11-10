@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Lista de Detalles de Pedidos</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID Detalle</th>
+      <th>ID Pedido</th>
+      <th>Línea</th>
+      <th>ID Producto</th>
+      <th>Cantidad</th>
+      <th>Precio Unit.</th>
+      <th>Subtotal</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for d in detalles %}
+    <tr>
+      <td>{{ d.id }}</td>
+      <td>{{ d.pedido.id }} ({{ d.pedido.cliente.apellido }})</td>
+      <td>{{ d.numero_linea }}</td>
+      <td>{{ d.producto_id }}</td>
+      <td>{{ d.cantidad }}</td>
+      <td>${{ d.precio_venta_unitario }}</td>
+      <td>${{ d.subtotal_detalle }}</td>
+      <td>
+        <a class="btn btn-sm btn-info" href="{% url 'actualizar_detalle_pedido' d.id %}">Editar</a>
+        <a class="btn btn-sm btn-danger" href="{% url 'borrar_detalle_pedido' d.id %}">Borrar</a>
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="8">No hay detalles de pedido.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

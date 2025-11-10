@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Borrar Detalle de Pedido</h3>
+<p>¿Desea eliminar el detalle (Línea <strong>#{{ detalle.numero_linea }}</strong>) del pedido <strong>#{{ detalle.pedido.id }}</strong>?</p>
+<form method="post">
+  {% csrf_token %}
+  <button class="btn btn-danger" type="submit">Eliminar</button>
+  <a class="btn btn-secondary" href="{% url 'ver_detalles' %}">Cancelar</a>
+</form>
+{% endblock %}

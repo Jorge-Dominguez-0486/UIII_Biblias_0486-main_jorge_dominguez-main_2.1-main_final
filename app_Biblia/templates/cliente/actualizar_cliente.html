@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Actualizar Cliente</h3>
+<form method="POST" action="{% url 'realizar_actualizacion_cliente' cliente.id %}">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label>Nombre</label>
+    <input class="form-control" name="nombre" value="{{ cliente.nombre }}">
+  </div>
+  <div class="mb-3">
+    <label>Apellido</label>
+    <input class="form-control" name="apellido" value="{{ cliente.apellido }}">
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" name="email" type="email" value="{{ cliente.email }}">
+  </div>
+  <div class="mb-3">
+    <label>País de residencia</label>
+    <input class="form-control" name="pais_residencia" value="{{ cliente.pais_residencia }}">
+  </div>
+  <button class="btn btn-success" type="submit">Guardar cambios</button>
+</form>
+{% endblock %}

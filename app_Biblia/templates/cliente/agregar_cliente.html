@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Agregar Cliente</h3>
+<form method="POST">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label>Nombre</label>
+    <input class="form-control" name="nombre" placeholder="Nombre" required>
+  </div>
+  <div class="mb-3">
+    <label>Apellido</label>
+    <input class="form-control" name="apellido" placeholder="Apellido" required>
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" name="email" type="email" placeholder="Correo" required>
+  </div>
+  <div class="mb-3">
+    <label>País de residencia</label>
+    <input class="form-control" name="pais_residencia" placeholder="País de residencia" required>
+  </div>
+  <button class="btn btn-primary" type="submit">Agregar</button>
+</form>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Lista de Pedidos</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente</th>
+      <th>Fecha</th>
+      <th>Total Neto</th>
+      <th>Método Pago</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in pedidos %}
+    <tr>
+      <td>{{ p.id }}</td>
+      <td>{{ p.cliente.nombre }} {{ p.cliente.apellido }}</td>
+      <td>{{ p.fecha_hora|date:"d/m/Y H:i" }}</td>
+      <td>${{ p.total_neto }}</td>
+      <td>{{ p.metodo_pago }}</td>
+      <td>{{ p.estado_pedido }}</td>
+      <td>
+        <a class="btn btn-sm btn-info" href="{% url 'actualizar_pedido' p.id %}">Editar</a>
+        <a class="btn btn-sm btn-danger" href="{% url 'borrar_pedido' p.id %}">Borrar</a>
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="7">No hay pedidos.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

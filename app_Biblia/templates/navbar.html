@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'inicio_biblias' %}">Biblias</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'inicio_biblias' %}">Inicio</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown">Clientes</a>
+          <ul class="dropdown-menu" aria-labelledby="clientesDropdown">
+            <li><a class="dropdown-item" href="{% url 'agregar_cliente' %}">Agregar Cliente</a></li>
+            <li><a class="dropdown-item" href="{% url 'ver_clientes' %}">Ver Clientes</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pedidosDropdown" role="button" data-bs-toggle="dropdown">Pedidos</a>
+          <ul class="dropdown-menu" aria-labelledby="pedidosDropdown">
+            <li><a class="dropdown-item" href="{% url 'agregar_pedido' %}">Agregar Pedido</a></li>
+            <li><a class="dropdown-item" href="{% url 'ver_pedidos' %}">Ver Pedidos</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="detalleDropdown" role="button" data-bs-toggle="dropdown">Detalles</a>
+          <ul class="dropdown-menu" aria-labelledby="detalleDropdown">
+            <li><a class="dropdown-item" href="{% url 'agregar_detalle_pedido' %}">Agregar Detalle</a></li>
+            <li><a class="dropdown-item" href="{% url 'ver_detalles' %}">Ver Detalles</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
