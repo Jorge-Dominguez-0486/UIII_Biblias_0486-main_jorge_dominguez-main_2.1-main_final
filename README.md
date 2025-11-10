@@ -1,40 +1,47 @@
 ### inicio
-<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/610fb479-8d54-472c-9d88-8c65acec1811" />
-
-
-### botones de agregar pedido y ver 
-<img width="1919" height="1062" alt="image" src="https://github.com/user-attachments/assets/1a041c65-c325-4379-bcb3-45f7825b4397" />
+<img width="1920" height="1009" alt="image" src="https://github.com/user-attachments/assets/47ee580c-7b35-451a-a131-545f752e6f04" />
 
 
 
-### agregar pedido
-<img width="1919" height="994" alt="image" src="https://github.com/user-attachments/assets/9f1a453a-af20-4db9-b861-6b6286596bf6" />
+### botones de agregar detalle_pedido y ver 
+<img width="1920" height="1001" alt="image" src="https://github.com/user-attachments/assets/06f1e9ba-f0be-46c2-a271-7213098c7d17" />
 
 
 
 
-### ver pedido
-<img width="959" height="536" alt="image" src="https://github.com/user-attachments/assets/f70dce8d-a3d0-45f1-9562-4858a5027ee4" />
+### agregar detalle
+<img width="1920" height="1001" alt="image" src="https://github.com/user-attachments/assets/621a8ce5-faa4-421a-9f04-ff72966c476f" />
+
+
+
+
+
+### ver detalle
+<img width="1920" height="993" alt="image" src="https://github.com/user-attachments/assets/32efc060-6fa3-4d69-999a-082bfc4720fa" />
+
 
 
 
 ### editar pedido
-<img width="959" height="533" alt="image" src="https://github.com/user-attachments/assets/632b8703-2ebb-4860-972f-f9c7b89d3512" />
+<img width="1920" height="993" alt="image" src="https://github.com/user-attachments/assets/d2cbe0d2-774c-4ca0-b90f-2bba1b6d42b7" />
+
 
 
 
 ### listo
-<img width="959" height="529" alt="image" src="https://github.com/user-attachments/assets/8f65e3eb-8d3d-4964-9dbc-7b023eb5d711" />
+<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/79a29c05-aed2-4dc5-9711-da2448177f99" />
 
 
 
-### borrar pedido
-<img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/b6727073-6e2a-4d1b-8f1f-2b47916f9c24" />
+
+### borrar detalle
+<img width="1920" height="995" alt="image" src="https://github.com/user-attachments/assets/16b63707-cdc4-4dac-9aaa-90392cc19aa6" />
+
 
 
 
 ### listo 
-<img width="1919" height="1058" alt="image" src="https://github.com/user-attachments/assets/8f4d4150-a368-4529-a65e-da51b2b43b84" />
+<img width="1920" height="997" alt="image" src="https://github.com/user-attachments/assets/08c6d8a4-196f-43d4-a6b2-a86394888038" />
 
 
 
